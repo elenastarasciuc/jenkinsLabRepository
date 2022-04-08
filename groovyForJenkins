@@ -6,7 +6,7 @@ node{
         sh 'ls'
     }
     stage('Write email'){
-        sh 'mail bcc: '', body: 'extra extra info', cc: '', from: '', replyTo: '', subject: 'Extra pipeline', to: 'elena.starasciuc@gmail.com''
+        mail bcc: '', body: 'extra extra info', cc: '', from: '', replyTo: '', subject: 'Extra pipeline', to: 'elena.starasciuc@gmail.com'
     }
     
 }
