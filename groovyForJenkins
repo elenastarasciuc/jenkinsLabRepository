@@ -1,0 +1,9 @@
+node{
+    stage('Clone git'){
+        git 'https://github.com/elenastarasciuc/jenkinsLabRepository.git'
+    }
+    stage('Write'){
+        sh 'cat seedTemplateScriptForJenkins'
+    }
+    
+}
