@@ -2,8 +2,11 @@ node{
     stage('Clone git'){
         git 'https://github.com/elenastarasciuc/jenkinsLabRepository.git'
     }
-    stage('Write'){
-        sh 'cat seedTemplateScriptForJenkins'
+    stage('List all files'){
+        sh 'ls'
+    }
+    stage('Write email'){
+        sh 'mail bcc: '', body: 'extra extra info', cc: '', from: '', replyTo: '', subject: 'Extra pipeline', to: 'elena.starasciuc@gmail.com''
     }
     
 }
